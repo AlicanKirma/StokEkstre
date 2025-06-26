@@ -1,0 +1,23 @@
+USE [Test]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_StokEkstre]    Script Date: 26.06.2025 15:22:12 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROC [dbo].[sp_StokEkstre]
+@malkodu varchar(30),@bastrh int,@bittrh int
+AS
+BEGIN
+    select  ROW_NUMBER() OVER(ORDER BY Tarih ASC) AS SiraNo,CASE
+    WHEN IslemTur=0 THEN 'Giriş'   
+    ELSE 'Çıkış'
+END AS IslemTuru,CONVERT(VARCHAR(15), CAST(STI.Tarih - 2 AS datetime), 104) as Tarih ,CASE
+    WHEN IslemTur=0 THEN STI.Miktar
+    ELSE 0 END AS GirisMiktar,CASE
+    WHEN IslemTur=1 THEN STI.Miktar
+    ELSE 0 END AS CikisMiktar
+from STI where Malkodu=@malkodu and @bastrh<=Tarih and Tarih<=@bittrh 
+ORDER BY CONVERT(datetime, CONVERT(VARCHAR(15), CAST(STI.Tarih - 2 AS datetime), 104), 103)
+	
+END

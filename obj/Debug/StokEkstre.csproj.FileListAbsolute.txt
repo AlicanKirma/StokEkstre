@@ -1,0 +1,10 @@
+C:\Users\alica\OneDrive\Belgeler\projeler\StokEkstre\bin\Debug\StokEkstre.exe.config
+C:\Users\alica\OneDrive\Belgeler\projeler\StokEkstre\bin\Debug\StokEkstre.exe
+C:\Users\alica\OneDrive\Belgeler\projeler\StokEkstre\bin\Debug\StokEkstre.pdb
+C:\Users\alica\OneDrive\Belgeler\projeler\StokEkstre\obj\Debug\StokEkstre.csproj.AssemblyReference.cache
+C:\Users\alica\OneDrive\Belgeler\projeler\StokEkstre\obj\Debug\StokEkstre.Form1.resources
+C:\Users\alica\OneDrive\Belgeler\projeler\StokEkstre\obj\Debug\StokEkstre.Properties.Resources.resources
+C:\Users\alica\OneDrive\Belgeler\projeler\StokEkstre\obj\Debug\StokEkstre.csproj.GenerateResource.cache
+C:\Users\alica\OneDrive\Belgeler\projeler\StokEkstre\obj\Debug\StokEkstre.csproj.CoreCompileInputs.cache
+C:\Users\alica\OneDrive\Belgeler\projeler\StokEkstre\obj\Debug\StokEkstre.exe
+C:\Users\alica\OneDrive\Belgeler\projeler\StokEkstre\obj\Debug\StokEkstre.pdb
