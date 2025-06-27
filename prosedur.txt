@@ -1,3 +1,4 @@
+sp_StokEkstre
 USE [Test]
 GO
 /****** Object:  StoredProcedure [dbo].[sp_StokEkstre]    Script Date: 26.06.2025 15:22:12 ******/
@@ -19,5 +20,21 @@ END AS IslemTuru,CONVERT(VARCHAR(15), CAST(STI.Tarih - 2 AS datetime), 104) as T
     ELSE 0 END AS CikisMiktar
 from STI where Malkodu=@malkodu and @bastrh<=Tarih and Tarih<=@bittrh 
 ORDER BY CONVERT(datetime, CONVERT(VARCHAR(15), CAST(STI.Tarih - 2 AS datetime), 104), 103)
+	
+END
+
+sp_StokUrunler
+
+USE [Test]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_StokUrunler]    Script Date: 27.06.2025 10:54:12 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROC [dbo].[sp_StokUrunler]
+AS
+BEGIN
+    select * from STK order by MalKodu
 	
 END
